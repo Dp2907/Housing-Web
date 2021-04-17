@@ -44,7 +44,7 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="ml-auto navbar-nav">
@@ -92,31 +92,31 @@
 
         <div class="carousel-inner carousel-fade">
           <div class="carousel-item active">
-            <img src="./images/b1.jpg" class="d-block w-100" />
+            <img src="./images/b1.jpg" />
             <div class="carousel-caption d-none d-md-block">
               <h1>LOREM IPSUM AMET</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="./images/b2.jpg" class="d-block w-100" />
+            <img src="./images/b2.jpg" />
             <div class="carousel-caption d-none d-md-block">
               <h1>DOLOR SIT HATANT MORBI</h1>
               <p>Quis autem vel eum iure reprehenderit quivol.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="./images/b3.jpg" class="d-block w-100" />
+            <img src="./images/b3.jpg" />
             <div class="carousel-caption d-none d-md-block">
               <h1>QUIS AUTEM VE EUM IURE</h1>
               <p>Excepteur sint ocecat cupid proident, deserunt.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="./images/b4.jpg" class="d-block w-100" />
+            <img src="./images/b4.jpg" />
             <div class="carousel-caption d-none d-md-block">
               <h1>VOLUPTATE VELIT ESSE</h1>
-              <p>Quis autem velreprehenderit qui ea.eum iure</p>
+              <p>Quis autemb velreprehenderit qui ea.eum iure</p>
             </div>
           </div>
         </div>
@@ -186,22 +186,32 @@
     <section class="statistic">
       <div class="container">
         <h1>Stats</h1>
-        <div class="d-flex justify-content-around align-items-center">
-          <div class="statistic__item">
-            <h1>3500</h1>
-            <p>clients</p>
+        <div
+          class="d-flex justify-content-around align-items-center statistic__list"
+        >
+          <div
+            class="d-flex justify-content-around align-items-center statistic__top"
+          >
+            <div class="statistic__item">
+              <h1>3500</h1>
+              <p>clients</p>
+            </div>
+            <div class="statistic__item">
+              <h1>650</h1>
+              <p>Plans</p>
+            </div>
           </div>
-          <div class="statistic__item">
-            <h1>650</h1>
-            <p>Plans</p>
-          </div>
-          <div class="statistic__item">
-            <h1>1021</h1>
-            <p>projects</p>
-          </div>
-          <div class="statistic__item">
-            <h1>1010</h1>
-            <p>Likes</p>
+          <div
+            class="d-flex justify-content-around align-items-center statistic__bottom"
+          >
+            <div class="statistic__item">
+              <h1>1021</h1>
+              <p>projects</p>
+            </div>
+            <div class="statistic__item">
+              <h1>1010</h1>
+              <p>Likes</p>
+            </div>
           </div>
         </div>
       </div>
@@ -211,7 +221,9 @@
       <div class="container d-flex justify-content-around align-items-center">
         <div class="text-center mt-5">
           <h1>Blog</h1>
-          <div class="d-flex justify-content-around align-items-center">
+          <div
+            class="d-flex justify-content-around align-items-center blog__list__card"
+          >
             <div class="card">
               <img
                 class="card-img-top"
@@ -219,7 +231,7 @@
                 alt="Card image cap"
               />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Lorem, ipsum dolor.</h5>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
@@ -234,7 +246,7 @@
                 alt="Card image cap"
               />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Lorem, ipsum dolor.</h5>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
@@ -249,7 +261,7 @@
                 alt="Card image cap"
               />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Lorem, ipsum dolor.</h5>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
@@ -261,7 +273,33 @@
         </div>
       </div>
     </section>
-    <section class="video"></section>
+
+    <section class="video">
+      <div class="trailer">
+        <video src="./media/trailer.mp4" controls="true"></video>
+        <i class="fa fa-times close"></i>
+      </div>
+
+      <div class="d-flex justify-content-spacing video__content">
+        <div class="video__item">
+          <a href="#" onclick="toggle();">
+            <i class="fa fa-play-circle"></i>
+          </a>
+        </div>
+        <div class="video__item text-center ml-auto mr-auto">
+          <h1>Get More...</h1>
+          <p class="text-white">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut minim veniam, labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi esse quam nihil molestiae consequatur, vel illum qui
+            dolorem eum fugiat quo voluptas nulla pariatur.
+          </p>
+          <button class="btn">Read more...</button>
+        </div>
+      </div>
+    </section>
+
     <section class="portfolio" id="portfolio"></section>
     <section class="subscribe"></section>
     <section class="agents" id="agents"></section>
@@ -278,5 +316,11 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function toggle() {
+        var trailer = document.querySelector(".trailer");
+        trailer.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>
