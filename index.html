@@ -28,6 +28,9 @@
   </head>
   <body>
     <header class="header">
+      <a href="#">
+        <img src="./images/arrowup.png" alt="" />
+      </a>
       <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#">
           <span class="lead">
@@ -91,30 +94,26 @@
         </ol>
 
         <div class="carousel-inner carousel-fade">
-          <div class="carousel-item active">
-            <img src="./images/b1.jpg" />
-            <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-item active carousel__item--1">
+            <div class="carousel-caption d-md-block">
               <h1>LOREM IPSUM AMET</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
             </div>
           </div>
-          <div class="carousel-item">
-            <img src="./images/b2.jpg" />
-            <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-item carousel__item--2">
+            <div class="carousel-caption d-md-block">
               <h1>DOLOR SIT HATANT MORBI</h1>
               <p>Quis autem vel eum iure reprehenderit quivol.</p>
             </div>
           </div>
-          <div class="carousel-item">
-            <img src="./images/b3.jpg" />
-            <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-item carousel__item--3">
+            <div class="carousel-caption d-md-block">
               <h1>QUIS AUTEM VE EUM IURE</h1>
               <p>Excepteur sint ocecat cupid proident, deserunt.</p>
             </div>
           </div>
-          <div class="carousel-item">
-            <img src="./images/b4.jpg" />
-            <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-item carousel__item--4">
+            <div class="carousel-caption d-md-block">
               <h1>VOLUPTATE VELIT ESSE</h1>
               <p>Quis autemb velreprehenderit qui ea.eum iure</p>
             </div>
@@ -231,7 +230,7 @@
                 alt="Card image cap"
               />
               <div class="card-body">
-                <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                <a class="card-title">Lorem, ipsum dolor.</a>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
@@ -246,7 +245,7 @@
                 alt="Card image cap"
               />
               <div class="card-body">
-                <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                <a class="card-title">Lorem, ipsum dolor.</a>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
@@ -261,7 +260,7 @@
                 alt="Card image cap"
               />
               <div class="card-body">
-                <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                <a class="card-title">Lorem, ipsum dolor.</a>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
@@ -277,12 +276,12 @@
     <section class="video">
       <div class="trailer">
         <video src="./media/trailer.mp4" controls="true"></video>
-        <i class="fa fa-times close"></i>
+        <i class="fa fa-times close" onclick="toggle();"></i>
       </div>
 
       <div class="d-flex justify-content-spacing video__content">
         <div class="video__item">
-          <a href="#" onclick="toggle();">
+          <a onclick="toggle();">
             <i class="fa fa-play-circle"></i>
           </a>
         </div>
@@ -300,11 +299,202 @@
       </div>
     </section>
 
-    <section class="portfolio" id="portfolio"></section>
-    <section class="subscribe"></section>
-    <section class="agents" id="agents"></section>
-    <section class="contact" id="contact"></section>
-    <footer class="footer"></footer>
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h1>Portfolio</h1>
+        <div
+          class="d-flex flex-wrap justify-content-around align-items-center portfolio__list"
+        >
+          <div class="portfolio__item">
+            <img src="./images/img1.jpg" alt="" />
+            <div>
+              <hr noshade="1" color="#00cdce" size="5px" width="100%" />
+              <h1>GALLERY</h1>
+              <hr noshade="1" color="#00cdce" size="5px" width="100%" />
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <img src="./images/img2.jpg" alt="" />
+            <div>
+              <hr noshade="1" color="#00cdce" size="5px" width="100%" />
+              <h1>GALLERY</h1>
+              <hr noshade="1" color="#00cdce" size="5px" width="100%" />
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <img src="./images/img3.jpg" alt="" />
+            <div>
+              <hr noshade="1" color="#00cdce" size="5px" width="100%" />
+              <h1>GALLERY</h1>
+              <hr noshade="1" color="#00cdce" size="5px" width="100%" />
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <img src="./images/img4.jpg" alt="" />
+            <div>
+              <hr noshade="1" color="#00cdce" size="5px" width="100%" />
+              <h1>GALLERY</h1>
+              <hr noshade="1" color="#00cdce" size="5px" width="100%" />
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <img src="./images/img5.jpg" alt="" />
+            <div>
+              <hr noshade="1" color="#00cdce" size="5px" width="100%" />
+              <h1>GALLERY</h1>
+              <hr noshade="1" color="#00cdce" size="5px" width="100%" />
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <img src="./images/img6.jpg" alt="" />
+            <div>
+              <hr noshade="1" color="#00cdce" size="5px" width="100%" />
+              <h1>GALLERY</h1>
+              <hr noshade="1" color="#00cdce" size="5px" width="100%" />
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscribe">
+      <div class="container">
+        <h1>Subscribe</h1>
+        <p>
+          consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
+          pariatur. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi
+        </p>
+        <form
+          action=""
+          class="d-flex flex-column align-items-center justify-content-around"
+        >
+          <input type="email" placeholder="Email" />
+          <button>Click</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="agents" id="agents">
+      <div class="container">
+        <h1>Our Agents</h1>
+        <div
+          class="agents__list d-flex justify-content-around align-items-center flex-wrap"
+        >
+          <div class="agents__item">
+            <img src="./images/t1.jpg" alt="" />
+            <div class="agents__item__content">
+              <h2>KAT WALLY</h2>
+              <p>Lorem ipsum</p>
+              <p>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fa fa-rss"></i>
+              </p>
+            </div>
+          </div>
+          <div class="agents__item">
+            <img src="./images/t4.jpg" alt="" />
+            <div class="agents__item__content">
+              <h2>JOHN MAX</h2>
+              <p>Lorem ipsum</p>
+              <p>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fa fa-rss"></i>
+              </p>
+            </div>
+          </div>
+          <div class="agents__item">
+            <img src="./images/t2.jpg" alt="" />
+            <div class="agents__item__content">
+              <h2>ROY KENT</h2>
+              <p>Lorem ipsum</p>
+              <p>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fa fa-rss"></i>
+              </p>
+            </div>
+          </div>
+          <div class="agents__item">
+            <img src="./images/t3.jpg" alt="" />
+            <div class="agents__item__content">
+              <h2>JOY IDSON</h2>
+              <p>Lorem ipsum</p>
+              <p>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fa fa-rss"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.530887756539!2d106.66729411485692!3d10.770591362246387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752edddb818ebf%3A0xfc8c05045f47a3d8!2sVan%20Hanh%20Mall!5e0!3m2!1sen!2s!4v1618654737421!5m2!1sen!2s"
+          class="w-100"
+          height="400"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="contact__form">
+        <h1>Contact us</h1>
+        <form
+          action=""
+          class="d-flex justify-content-between align-items-start"
+        >
+          <div
+            class="contact__form__left d-flex flex-column justify-content-around align-items-left"
+          >
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Last Name" />
+            <input type="text" placeholder="Email" />
+            <input type="text" placeholder="Phone" />
+          </div>
+          <div
+            class="contact__form__right d-flex flex-column justify-content-around align-items-right"
+          >
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+            <button>Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container d-flex justify-content-between align-items-center">
+        <p>
+          <i class="fa fa-copyright"></i>
+          <span>2017 Housing. All Rights Reserved | Design by</span>
+          <a href="https://w3layouts.com/" target="_blank">W3layouts</a>
+        </p>
+        <div>
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fa fa-rss"></i>
+          <i class="fab fa-vk"></i>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -319,7 +509,10 @@
     <script>
       function toggle() {
         var trailer = document.querySelector(".trailer");
+        var video = document.querySelector("video");
         trailer.classList.toggle("active");
+        video.pause();
+        video.currentTime = 0;
       }
     </script>
   </body>
