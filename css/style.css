@@ -570,11 +570,16 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+  .video {
+    height: auto;
+  }
+
   .video__content {
     flex-direction: column;
   }
   .video__item {
     width: 100% !important;
+    height: auto;
   }
 
   .video__item img {
@@ -591,7 +596,7 @@ img {
 
 /* PORTFOLIO */
 .portfolio {
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 
 .portfolio .container > h1 {
@@ -614,7 +619,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0.8);
+  transform: translate(-50%, -50%) scale(0.7);
   z-index: 13;
   background-color: rgba(0, 0, 0, 0.72);
   padding: 0.5rem 3rem;
@@ -627,11 +632,152 @@ img {
 .portfolio__item:hover > div {
   visibility: visible;
   opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(0.9);
 }
 
 .portfolio__item div hr {
   border-top: 3px solid rgba(00, 00, 00, 0.1);
+}
+
+@media screen and (max-width: 1200px) {
+  .portfolio__item > div {
+    transform: translate(-50%, -50%) scale(0.5);
+    padding: 0.5rem 3rem;
+    color: white;
+    transition: all 0.4s ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .portfolio__item:hover > div {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .portfolio__item {
+    width: 50%;
+  }
+
+  .portfolio__item > div {
+    transform: translate(-50%, -50%) scale(0.6);
+    padding: 0.5rem 3rem;
+    color: white;
+    transition: all 0.4s ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .portfolio__item:hover > div {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio {
+    margin: 3rem;
+  }
+
+  .portfolio__item {
+    width: 100%;
+  }
+
+  .portfolio__item > div {
+    transform: translate(-50%, -50%) scale(0.8);
+    padding: 0.5rem 3rem;
+    color: white;
+    transition: all 0.4s ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .portfolio__item:hover > div {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .portfolio__item {
+    width: 100%;
+  }
+
+  .portfolio__item img {
+    transform: scale(1.2);
+    margin: 2rem 0;
+  }
+
+  .portfolio__item > div {
+    transform: translate(-50%, -50%) scale(0.5);
+    padding: 0.5rem 3rem;
+    color: white;
+    transition: all 0.4s ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .portfolio__item:hover > div {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .portfolio__item {
+    width: 100%;
+  }
+
+  .portfolio__item img {
+    transform: scale(1.3);
+    margin: 2rem 0;
+  }
+
+  .portfolio__item > div {
+    transform: translate(-50%, -50%) scale(0.5);
+    padding: 0.5rem 3rem;
+    color: white;
+    transition: all 0.4s ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .portfolio__item:hover > div {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .portfolio__item {
+    width: 100%;
+  }
+
+  .portfolio__item img {
+    transform: scale(1.5);
+    margin: 2rem 0;
+  }
+
+  .portfolio__item > div {
+    transform: translate(-50%, -50%) scale(0.5);
+    padding: 0.5rem 3rem;
+    color: white;
+    transition: all 0.4s ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .portfolio__item:hover > div {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0.7);
+  }
 }
 
 /* SUBSCRIBE */
@@ -672,6 +818,17 @@ img {
 .subscribe .container form button:hover {
   color: #000;
   background-color: #fff;
+}
+
+@media screen and (max-width: 576px) {
+  .subscribe .container h1 {
+    margin-bottom: 1.5rem;
+  }
+
+  .subscribe .container form input {
+    display: block;
+    width: 100%;
+  }
 }
 
 /* AGENTS */
@@ -733,6 +890,31 @@ img {
   background: #f26522;
 }
 
+@media screen and (max-width: 1200px) {
+  .agents__item {
+    width: 50%;
+    background-color: white;
+    margin: 1rem 0;
+  }
+  .agents__item__details {
+    width: 80%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.79);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .agents__item {
+    width: 100%;
+    background-color: white;
+    margin: 1rem 1rem;
+  }
+  .agents__item__details {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.79);
+  }
+}
+
 /* CONTACT */
 
 .contact {
@@ -787,6 +969,20 @@ img {
   background-color: #00cdce;
 }
 
+@media screen and (max-width: 768px) {
+  .contact .contact__form form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact__form__left,
+  .contact__form__right {
+    width: 80%;
+    margin:0 auto;
+    align-items: center;
+  }
+}
 /* FOOTER */
 
 .footer {
@@ -834,4 +1030,15 @@ img {
 
 .footer .container > div i:nth-child(4):hover {
   color: #45668e;
+}
+
+@media screen and (max-width:992px){
+  .footer .container{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer .container p{
+    margin-bottom: 1rem;
+  }
 }
